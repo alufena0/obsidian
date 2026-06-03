@@ -1,0 +1,10 @@
+{
+  "id": "copy-image-context-menu",
+  "name": "Copy Image Context Menu",
+  "version": "1.0.0",
+  "minAppVersion": "0.13.31",
+  "description": "Adds 'Copy image' to the context menu when right-clicking any embedded image.",
+  "author": "alufena (vibe coded)",
+  "authorUrl": "https://gitlab.com/alufena",
+  "isDesktopOnly": true
+}

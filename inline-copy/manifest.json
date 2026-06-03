@@ -1,0 +1,10 @@
+{
+  "id": "inline-copy",
+  "name": "Inline Copy",
+  "version": "1.0.0",
+  "minAppVersion": "0.15.0",
+  "description": "Click any inline code to copy its contents.",
+  "author": "alufena (vibe coded)",
+  "authorUrl": "https://gitlab.com/alufena",
+  "isDesktopOnly": false
+}

@@ -1,0 +1,10 @@
+{
+  "id": "middle-click-scroll",
+  "name": "Middle Click Scroll",
+  "version": "1.0.0",
+  "minAppVersion": "0.15.0",
+  "description": "Enables auto-scroll on middle mouse button click, like editor.scrollOnMiddleClick in VS Code.",
+  "author": "alufena (vibe coded)",
+  "authorUrl": "https://gitlab.com/alufena",
+  "isDesktopOnly": true
+}

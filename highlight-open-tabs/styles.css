@@ -1,0 +1,31 @@
+/* Aba ativa */
+.nav-file-title.open-in-tab.is-active,
+.nav-file-title.open-in-tab.active-tab {
+  background-color: #2F5597 !important; /* Azul mais forte */
+  color: white !important;
+  font-weight: bold !important;
+
+  /* Zerar efeitos visuais */
+  box-shadow: none !important;
+  text-shadow: none !important;
+  outline: none !important;
+  border: none !important;
+  border-left: none !important;
+  border-radius: 0 !important;
+}
+
+/* Abas abertas mas em segundo plano */
+.nav-file-title.open-in-tab:not(.is-active):not(.active-tab) {
+  /* background-color: #7B9FC7 !important; /* Azul mais fraco */ 
+  /*color: white !important; */
+  background-color: #eef4ff !important;
+  font-weight: normal !important;
+
+  /* Zerar efeitos visuais */
+  box-shadow: none !important;
+  text-shadow: none !important;
+  outline: none !important;
+  border: none !important;
+  border-left: none !important;
+  border-radius: 0 !important;
+}

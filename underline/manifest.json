@@ -1,0 +1,10 @@
+{
+  "id": "ins-underline-syntax",
+  "name": "++ Underline Syntax",
+  "version": "1.0.0",
+  "minAppVersion": "0.15.0",
+  "description": "Renders ++text++ as underlined text. Supports Reading Mode and Live Preview.",
+  "author": "alufena (vibe coded)",
+  "authorUrl": "https://gitlab.com/alufena",
+  "isDesktopOnly": false
+}

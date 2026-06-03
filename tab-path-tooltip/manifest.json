@@ -1,0 +1,10 @@
+{
+  "id": "tab-path-tooltip",
+  "name": "Tab Path Tooltip",
+  "version": "1.0.0",
+  "minAppVersion": "0.15.0",
+  "description": "Shows the full vault-relative path of the file as a tooltip on tabs.",
+  "author": "alufena (vibe coded)",
+  "authorUrl": "https://gitlab.com/alufena",
+  "isDesktopOnly": false
+}

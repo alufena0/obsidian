@@ -1,0 +1,10 @@
+{
+  "id": "image-auto-refresh",
+  "name": "Image Auto Refresh",
+  "version": "1.0.0",
+  "minAppVersion": "0.15.0",
+  "description": "Automatically refreshes embedded images when modified externally, without reopening the tab.",
+  "author": "alufena (vibe coded)",
+  "authorUrl": "https://gitlab.com/alufena/obsidian-plugins",
+  "isDesktopOnly": false
+}

@@ -1,0 +1,10 @@
+{
+  "id": "max-font-zoom",
+  "name": "Max Font Zoom",
+  "version": "1.0.0",
+  "minAppVersion": "0.15.0",
+  "description": "Zooms the font to maximum size with a single Ctrl + scroll up.",
+  "author": "alufena (vibe coded)",
+  "authorUrl": "https://gitlab.com/alufena",
+  "isDesktopOnly": true
+}

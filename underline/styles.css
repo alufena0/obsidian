@@ -1,0 +1,12 @@
+/* ── Reading Mode ─────────────────────────────────────────── */
+ins {
+    text-decoration: underline;
+    text-decoration-style: solid;
+    font-style: normal;
+}
+
+/* ── Live Preview (CodeMirror) ────────────────────────────── */
+.cm-ins {
+    text-decoration: underline;
+    text-decoration-style: solid;
+}

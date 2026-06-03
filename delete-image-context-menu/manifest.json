@@ -1,0 +1,10 @@
+{
+  "id": "delete-image-context-menu",
+  "name": "Delete Image Context Menu",
+  "version": "1.0.0",
+  "minAppVersion": "0.13.31",
+  "description": "Adds a Delete option to the right-click context menu of embedded images, sending the file to the system recycle bin and removing all embed references from the vault.",
+  "author": "alufena (vibe coded)",
+  "authorUrl": "https://gitlab.com/alufena",
+  "isDesktopOnly": true
+}

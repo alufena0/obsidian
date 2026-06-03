@@ -1,0 +1,5 @@
+.inline-copy-flash {
+    transition: background-color 0.1s, color 0.1s;
+    background-color: var(--color-accent) !important;
+    color: var(--text-on-accent) !important;
+}

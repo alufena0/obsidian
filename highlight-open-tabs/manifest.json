@@ -1,0 +1,10 @@
+{
+  "id": "highlight-open-tabs",
+  "name": "Highlight Open Tabs in File Explorer",
+  "version": "1.0.0",
+  "minAppVersion": "0.12.0",
+  "description": "Highlights all files currently open in tabs within the File Explorer panel.",
+  "author": "alufena (vibe coded)",
+  "authorUrl": "https://gitlab.com/alufena",
+  "isDesktopOnly": false
+}

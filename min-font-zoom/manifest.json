@@ -1,0 +1,10 @@
+{
+  "id": "min-font-zoom",
+  "name": "Min Font Zoom",
+  "version": "1.0.0",
+  "minAppVersion": "0.15.0",
+  "description": "Zooms the font to minimum size with a single Ctrl + scroll down.",
+  "author": "alufena (vibe coded)",
+  "authorUrl": "https://gitlab.com/alufena",
+  "isDesktopOnly": true
+}

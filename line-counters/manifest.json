@@ -1,0 +1,10 @@
+{
+  "id": "line-counters",
+  "name": "Line Counters",
+  "version": "1.0.0",
+  "minAppVersion": "0.15.0",
+  "description": "Displays the line count of the open markdown file in the status bar.",
+  "author": "alufena (vibe coded)",
+  "authorUrl": "https://gitlab.com/alufena",
+  "isDesktopOnly": false
+}

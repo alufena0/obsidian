@@ -1,0 +1,7 @@
+{
+  "deadzone": 5,
+  "linear": 0.15,
+  "quad": 0.001,
+  "toggleThresh": 6,
+  "toggleMs": 300
+}

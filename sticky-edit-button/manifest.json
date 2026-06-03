@@ -1,0 +1,10 @@
+{
+  "id": "sticky-edit-button",
+  "name": "Sticky Edit Button",
+  "version": "1.0.0",
+  "minAppVersion": "1.0.0",
+  "description": "Keeps the edit-block-button visible while scrolling tall images.",
+  "author": "alufena (vibe coded)",
+  "authorUrl": "https://gitlab.com/alufena",
+  "isDesktopOnly": false
+}
