@@ -1,0 +1,10 @@
+{
+  "id": "crop-image-edges",
+  "name": "Crop Image Edges",
+  "version": "1.0.0",
+  "minAppVersion": "0.15.0",
+  "description": "Right-click any rendered image to crop it — remove empty borders, auto-trim whitespace, or drag a selection manually.",
+  "author": "alufena",
+  "authorUrl": "https://gitlab.com/alufena/obsidian-plugins",
+  "isDesktopOnly": true
+}
