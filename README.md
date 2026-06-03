@@ -23,7 +23,7 @@ All of them solve something that was missing or broke after an update.
 | [tab-path-tooltip](./tab-path-tooltip)                         | Hover a tab to see its full vault-relative path. Useful when filenames alone aren't enough          |
 | [underline](./underline)                                       | Adds ++underline++ syntax to Live Preview and Reading Mode. The missing markup                      |
 | [show-external-urls](./show-external-urls) | Expands every external link to show its full URL inline, across all editor modes |
-
+| [crop-image-edges](./crop-image-edges) | Trims the dead space around images without leaving the vault |
 ## Installation
 
 Each plugin folder contains `main.js` and `manifest.json`.
