@@ -1,7 +1,7 @@
 {
   "id": "jump-random",
   "name": "Jump Random",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "minAppVersion": "0.15.0",
   "description": "Jumps randomly to a section of the open markdown file. Adds a ribbon button and a command (map hotkey in Settings → Hotkeys).",
   "author": "alufena (vibe coded)",
