@@ -1,7 +1,7 @@
 {
   "id": "click-to-edit-image",
   "name": "Click to Edit Image",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "minAppVersion": "1.0.0",
   "description": "Click an image in Live Preview to reveal and edit its ![[...]] embed syntax.",
   "author": "alufena (vibe coded)",
