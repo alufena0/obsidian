@@ -1,7 +1,5 @@
 const { Plugin, Menu } = require('obsidian');
-
 const STYLE_ID = 'click-to-edit-image-styles';
-
 const CSS = `
 .internal-embed.image-embed .embed-actions {
     display: none !important;
@@ -11,15 +9,13 @@ const CSS = `
     cursor: text !important;
 }
 `;
-
 module.exports = class ClickToEditImage extends Plugin {
     async onload() {
         const style = document.createElement('style');
         style.id = STYLE_ID;
         style.textContent = CSS;
         document.head.appendChild(style);
-
-        // CLIQUE ESQUERDO
+        // LEFT CLICK
         this.registerDomEvent(document, 'click', (evt) => {
             const cmContent = evt.target.closest?.('.cm-content');
             if (!cmContent) return;
@@ -46,10 +42,31 @@ module.exports = class ClickToEditImage extends Plugin {
             if (!editBtn) return;
             evt.preventDefault();
             evt.stopPropagation();
+            const scroller = cmContent.closest('.cm-scroller');
+            const line = found.closest('.cm-line');
+            const inBlockquote = line?.classList.contains('HyperMD-quote');
+            const savedScrollTop = scroller ? scroller.scrollTop : null;
             editBtn.click();
+            if (inBlockquote && scroller && savedScrollTop !== null) {
+                // Obsidian's native click on an embed inside a blockquote ALWAYS jumps
+                // the scroll to the bottom of the .cm-image-reveal-spacer -- this happens
+                // even with no plugin at all, it's CM6 itself. There's no way to prevent
+                // the jump from happening, so the workaround is: let it happen and
+                // immediately restore the position, holding for a short while to beat the
+                // scrollIntoView that CM6 fires right after (sometimes more than once).
+                let ticks = 0;
+                const maxTicks = 20; // ~20 frames, gives CM6 enough time to finish fighting
+                const holdScroll = () => {
+                    scroller.scrollTop = savedScrollTop;
+                    ticks += 1;
+                    if (ticks < maxTicks) {
+                        requestAnimationFrame(holdScroll);
+                    }
+                };
+                requestAnimationFrame(holdScroll);
+            }
         }, false);
-
-        // CLIQUE DIREITO
+        // RIGHT CLICK
         this.registerDomEvent(document, 'contextmenu', (evt) => {
             const img = evt.target.closest?.('.cm-content img');
             if (!img) return;
@@ -67,16 +84,13 @@ module.exports = class ClickToEditImage extends Plugin {
             this.app.workspace.trigger('file-menu', menu, file, 'more-options');
             menu.showAtMouseEvent(evt);
         }, true);
-
-        // AUTO-ESC NO SCROLL — salva e restaura scrollTop em vez de depender do evento sintético
+        // AUTO-ESC ON SCROLL — saves and restores scrollTop instead of relying on the synthetic event
         this.registerDomEvent(document, 'wheel', (evt) => {
             const scroller = evt.target.closest?.('.cm-scroller');
             if (!scroller) return;
             const openEmbedLine = scroller.querySelector('.cm-line.cm-active .cm-formatting-embed');
             if (!openEmbedLine) return;
-
             const savedScrollTop = scroller.scrollTop;
-
             const escEvent = new KeyboardEvent('keydown', {
                 key: 'Escape',
                 code: 'Escape',
@@ -86,7 +100,6 @@ module.exports = class ClickToEditImage extends Plugin {
                 cancelable: true,
             });
             document.activeElement?.dispatchEvent(escEvent);
-
             requestAnimationFrame(() => {
                 requestAnimationFrame(() => {
                     scroller.scrollTop = savedScrollTop;
@@ -94,7 +107,6 @@ module.exports = class ClickToEditImage extends Plugin {
             });
         }, { passive: true, capture: true });
     }
-
     onunload() {
         document.getElementById(STYLE_ID)?.remove();
     }
