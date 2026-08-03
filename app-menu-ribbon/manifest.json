@@ -1,0 +1,10 @@
+{
+    "id": "app-menu-ribbon",
+    "name": "App Menu Ribbon",
+    "version": "1.0.0",
+    "minAppVersion": "1.0.0",
+    "description": "Restores access to the native application menu via a ribbon icon, useful when the menu bar is hidden.",
+    "author": "alufena (vibe coded)",
+    "authorUrl": "https://gitlab.com/alufena",
+    "isDesktopOnly": true
+}
