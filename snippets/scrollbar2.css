@@ -1,0 +1,36 @@
+/* Primeiro removemos os botões de TODAS as barras de rolagem */
+*::-webkit-scrollbar-button {
+  display: none !important;
+}
+
+/* Depois aplicamos o estilo Windows 95 em todos os elementos */
+body:not(.native-scrollbars) *::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+  background: none;
+}
+
+body:not(.native-scrollbars) *::-webkit-scrollbar-thumb {
+  visibility: initial;
+  width: 16px;
+  height: 16px;
+  background: silver;
+  box-shadow: inset 1px 1px #dfdfdf, inset -1px -1px gray;
+  border: 1px solid;
+  border-color: silver #000 #000 silver;
+  border-radius: 0px;
+}
+
+body:not(.native-scrollbars) *::-webkit-scrollbar-track {
+  image-rendering: optimizeSpeed;
+  image-rendering: pixelated;
+  image-rendering: optimize-contrast;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgLTAuNSAyIDIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyI+CjxtZXRhZGF0YT5NYWRlIHdpdGggUGl4ZWxzIHRvIFN2ZyBodHRwczovL2NvZGVwZW4uaW8vc2hzaGF3L3Blbi9YYnh2Tmo8L21ldGFkYXRhPgo8cGF0aCBzdHJva2U9IiNjMGMwYzAiIGQ9Ik0wIDBoMU0xIDFoMSIgLz4KPC9zdmc+");
+  background-position: 0 0;
+  background-repeat: repeat;
+  background-size: 2px;
+}
+
+body:not(.native-scrollbars) *::-webkit-scrollbar-corner {
+  background: silver;
+}

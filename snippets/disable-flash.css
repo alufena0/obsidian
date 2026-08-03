@@ -1,0 +1,9 @@
+.is-flashing {
+    transition: none !important;
+    background-color: #3a6ea5 !important;
+    color: #ffffff !important; /* Mudando para branco */
+}
+.is-flashing * {
+    background-color: #3a6ea5;
+    color: #ffffff; /* Mudando para branco */
+}

@@ -1,0 +1,84 @@
+/* Esconde o ícone de arquivo nas abas de PDF do Obsidian */
+
+/* Método 1: Esconder o container do ícone especificamente para PDFs */
+.workspace-tab-header[data-type="pdf"] .workspace-tab-header-inner-icon {
+    display: none !important;
+}
+
+/* Método 2: Esconder apenas o SVG file-text em PDFs */
+.workspace-tab-header[data-type="pdf"] .workspace-tab-header-inner-icon svg.lucide-file-text {
+    display: none !important;
+}
+
+/* Método 3: Baseado no caminho do arquivo */
+.workspace-tab-header[data-path*=".pdf"] .workspace-tab-header-inner-icon {
+    display: none !important;
+}
+
+/* Método 4: Esconder qualquer ícone file-text em abas que terminam com .pdf */
+.workspace-tab-header[title*=".pdf"] .workspace-tab-header-inner-icon {
+    display: none !important;
+}
+
+/* Ajustar espaçamento das abas PDF sem ícone */
+.workspace-tab-header[data-type="pdf"] .workspace-tab-header-inner,
+.workspace-tab-header[data-path*=".pdf"] .workspace-tab-header-inner {
+    padding-left: 0px !important;
+}
+
+/* Esconde APENAS o ícone de código nas abas HTML - versão menos invasiva */
+
+/* Método mais específico - só esconde o ícone lucide-code-2 dentro das abas */
+.workspace-tab-header .workspace-tab-header-inner .workspace-tab-header-inner-icon svg.lucide-code-2 {
+    display: none !important;
+}
+
+/* Método alternativo mais específico */
+.workspace-tab-header-container .workspace-tab-header .workspace-tab-header-inner-icon svg.svg-icon.lucide-code-2 {
+    display: none !important;
+}
+
+/* Ajustar o espaçamento da aba quando o ícone for escondido */
+.workspace-tab-header:has(.workspace-tab-header-inner-icon svg.lucide-code-2) .workspace-tab-header-inner {
+    padding-left: 0px !important;
+}
+
+/* Remove o espaçamento do container do ícone quando escondido */
+.workspace-tab-header .workspace-tab-header-inner-icon:has(svg.lucide-code-2) {
+    width: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    min-width: 0 !important;
+}
+
+/* Força o título a ocupar o espaço do ícone */
+.workspace-tab-header:has(.workspace-tab-header-inner-icon svg.lucide-code-2) .workspace-tab-header-inner-title {
+    margin-left: 0px !important;
+}
+
+/* =============================================== */
+/* NOVO BLOCO → Esconder ícone de tabela (lucide-table) */
+/* =============================================== */
+
+/* Esconde o ícone lucide-table */
+.workspace-tab-header .workspace-tab-header-inner .workspace-tab-header-inner-icon svg.lucide-table {
+    display: none !important;
+}
+
+/* Ajustar o espaçamento da aba quando o ícone for escondido */
+.workspace-tab-header:has(.workspace-tab-header-inner-icon svg.lucide-table) .workspace-tab-header-inner {
+    padding-left: 0px !important;
+}
+
+/* Remove o espaçamento do container do ícone quando escondido */
+.workspace-tab-header .workspace-tab-header-inner-icon:has(svg.lucide-table) {
+    width: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    min-width: 0 !important;
+}
+
+/* Força o título a ocupar o espaço do ícone */
+.workspace-tab-header:has(.workspace-tab-header-inner-icon svg.lucide-table) .workspace-tab-header-inner-title {
+    margin-left: 0px !important;
+}

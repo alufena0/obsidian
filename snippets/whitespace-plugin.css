@@ -1,0 +1,73 @@
+/* CSS AGRESSIVO - Override total da opacidade das bolinhas */
+
+/* Força redefinição da variável em TODOS os contextos possíveis */
+:root {
+    --show-whitespace-color: rgba(255, 255, 255, .20) !important;
+}
+
+body {
+    --show-whitespace-color: rgba(255, 255, 255, .20) !important;
+}
+
+.theme-dark {
+    --show-whitespace-color: rgba(255, 255, 255, .20) !important;
+}
+
+.theme-light {
+    --show-whitespace-color: rgba(0, 0, 0, .20) !important;
+}
+
+/* Força aplicação direta em TODOS os elementos com background radial-gradient */
+.cm-highlightSpace,
+.markdown-source-view .cm-highlightSpace,
+.markdown-source-view.mod-cm6 .cm-highlightSpace,
+body .cm-highlightSpace,
+body .markdown-source-view .cm-highlightSpace,
+body .markdown-source-view.mod-cm6 .cm-highlightSpace {
+    background: radial-gradient(circle at 50% 55%, rgba(255, 255, 255, .20) 20%, transparent 20%) !important;
+}
+
+/* Para tema claro - força cor preta */
+.theme-light .cm-highlightSpace,
+.theme-light .markdown-source-view .cm-highlightSpace,
+.theme-light .markdown-source-view.mod-cm6 .cm-highlightSpace,
+.theme-light body .cm-highlightSpace {
+    background: radial-gradient(circle at 50% 55%, rgba(0, 0, 0, .20) 20%, transparent 20%) !important;
+}
+
+/* Força em TODOS os seletores específicos do plugin */
+body:not(.swcm6-nix-plugin-styles) .markdown-source-view.mod-cm6 .cm-line .cm-highlightSpace,
+body:not(.swcm6-nix-plugin-styles) .markdown-source-view.mod-cm6 .cm-line .cm-indent .cm-highlightSpace,
+body:not(.swcm6-nix-plugin-styles) .markdown-source-view.mod-cm6 .cm-line .cm-indent-spacing .cm-highlightSpace,
+body:not(.swcm6-nix-plugin-styles) .markdown-source-view.mod-cm6 .cm-line .cm-trailingSpace .cm-highlightSpace,
+body:not(.swcm6-nix-plugin-styles) .markdown-source-view.mod-cm6 .cm-line .cm-trailing-space-a .cm-highlightSpace,
+body:not(.swcm6-nix-plugin-styles) .markdown-source-view.mod-cm6 .cm-line .cm-trailing-space-b .cm-highlightSpace,
+body:not(.swcm6-nix-plugin-styles).swcm6-show-all-whitespace .markdown-source-view.mod-cm6 .cm-line .cm-highlightSpace,
+body:not(.swcm6-nix-plugin-styles).swcm6-show-all-codeblock-whitespace .markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock .cm-highlightSpace,
+body:not(.swcm6-nix-plugin-styles).swcm6-show-codeblock-whitespace .markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock .cm-indent .cm-highlightSpace,
+body:not(.swcm6-nix-plugin-styles).swcm6-show-table-whitespace .markdown-source-view.mod-cm6 .cm-line.HyperMD-table-row .cm-highlightSpace {
+    background: radial-gradient(circle at 50% 55%, rgba(255, 255, 255, .20) 20%, transparent 20%) !important;
+}
+
+/* Para tema claro nos seletores específicos */
+.theme-light body:not(.swcm6-nix-plugin-styles) .markdown-source-view.mod-cm6 .cm-line .cm-highlightSpace,
+.theme-light body:not(.swcm6-nix-plugin-styles) .markdown-source-view.mod-cm6 .cm-line .cm-indent .cm-highlightSpace,
+.theme-light body:not(.swcm6-nix-plugin-styles) .markdown-source-view.mod-cm6 .cm-line .cm-indent-spacing .cm-highlightSpace,
+.theme-light body:not(.swcm6-nix-plugin-styles) .markdown-source-view.mod-cm6 .cm-line .cm-trailingSpace .cm-highlightSpace,
+.theme-light body:not(.swcm6-nix-plugin-styles) .markdown-source-view.mod-cm6 .cm-line .cm-trailing-space-a .cm-highlightSpace,
+.theme-light body:not(.swcm6-nix-plugin-styles) .markdown-source-view.mod-cm6 .cm-line .cm-trailing-space-b .cm-highlightSpace {
+    background: radial-gradient(circle at 50% 55%, rgba(0, 0, 0, .20) 20%, transparent 20%) !important;
+}
+
+/* Força redefinição das variáveis CSS em todos os contextos do plugin */
+body:not(.swcm6-nix-plugin-styles),
+body:not(.swcm6-nix-plugin-styles).swcm6-show-all-codeblock-whitespace .markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock,
+body:not(.swcm6-nix-plugin-styles).swcm6-show-codeblock-whitespace .markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock {
+    --show-whitespace-color: rgba(255, 255, 255, .20) !important;
+}
+
+.theme-light body:not(.swcm6-nix-plugin-styles),
+.theme-light body:not(.swcm6-nix-plugin-styles).swcm6-show-all-codeblock-whitespace .markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock,
+.theme-light body:not(.swcm6-nix-plugin-styles).swcm6-show-codeblock-whitespace .markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock {
+    --show-whitespace-color: rgba(0, 0, 0, .20) !important;
+}

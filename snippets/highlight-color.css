@@ -1,0 +1,5 @@
+/* ==highlight== background */
+body {
+    --text-highlight-bg-rgb: 255, 255, 0 !important;
+    --text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 1) !important;
+}

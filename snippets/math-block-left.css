@@ -1,0 +1,57 @@
+/* Math Block Left Alignment for Obsidian */
+/* Força todos os blocos matemáticos ($...$) a ficarem alinhados à esquerda */
+
+/* MathJax - versões mais recentes do Obsidian */
+.MathJax, 
+.MathJax_Display,
+.MathJax_SVG_Display {
+    text-align: left !important;
+    margin: 0.5em 0 !important;
+}
+
+/* KaTeX - motor matemático alternativo */
+.katex-display {
+    text-align: left !important;
+    margin: 0.5em 0 !important;
+}
+
+/* Seletores gerais para blocos matemáticos */
+.math-block,
+.math.math-block,
+div[data-type="math"] {
+    text-align: left !important;
+    margin-left: 0 !important;
+    display: block !important;
+}
+
+/* Para o modo de leitura */
+.markdown-preview-view .math-block,
+.markdown-preview-view .math.math-block,
+.markdown-reading-view .math-block {
+    text-align: left !important;
+    justify-content: flex-start !important;
+}
+
+/* Para o modo de edição (Live Preview) */
+.markdown-source-view.mod-cm6 .math-block,
+.cm-content .math-block,
+.cm-line .math-block {
+    text-align: left !important;
+}
+
+/* Força o container pai também */
+.math-block > * {
+    text-align: left !important;
+}
+
+/* Remove centralização automática */
+.math-block mjx-container,
+.math-block .katex {
+    margin: 0 !important;
+    text-align: left !important;
+}
+
+/* Especificamente para SVG do MathJax */
+.math-block mjx-container svg {
+    margin: 0 !important;
+}

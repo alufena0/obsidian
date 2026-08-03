@@ -1,0 +1,26 @@
+/* Ajusta todos os containers relacionados à busca */
+.workspace-leaf-content .document-search-container,
+.workspace-leaf-content .document-search,
+.workspace-leaf-content .search-input-container,
+.workspace-leaf-content .document-search input {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* Ajusta especificamente o container principal da busca */
+.document-search-container {
+    padding: 1 !important;
+    margin: 0 !important;
+}
+
+/* Remove qualquer padding do container pai */
+.workspace-leaf-content[data-type="markdown"] .view-content {
+    padding-right: 0 !important;
+}
+
+/* Ajusta o container do editor se necessário */
+.markdown-source-view.mod-cm6 {
+    padding-right: 0 !important;
+}

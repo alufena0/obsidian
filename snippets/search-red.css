@@ -1,0 +1,5 @@
+/* Estilo para quando não há resultados na busca */
+input.mod-no-match:not(:placeholder-shown) {
+    background-color: rgba(255, 0, 0, 0.2) !important;
+    border: var(--input-border-width) solid var(--background-modifier-border) !important;
+}

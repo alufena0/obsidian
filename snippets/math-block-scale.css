@@ -1,0 +1,18 @@
+/* Aumenta o tamanho dos math blocks (LaTeX) no Obsidian */
+
+/* Modo de leitura */
+.math-block {
+  font-size: 1.4em !important; /* ajuste o valor se quiser maior/menor */
+  line-height: 1.6;
+}
+
+/* Modo de edição (Live Preview) */
+.cm-math-block {
+  font-size: 1.4em !important;
+  line-height: 1.6;
+}
+
+/* Math inline (entre $...$) */
+.math-inline {
+  font-size: 1.2em !important;
+}

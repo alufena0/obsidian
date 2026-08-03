@@ -1,0 +1,50 @@
+/* Esconde APENAS o botão Expand e o botão New Tab (+) do Obsidian */
+
+/* Esconder o botão Expand - mais específico */
+.workspace-tab-header-container .clickable-icon svg.sidebar-right {
+    display: none !important;
+}
+
+.workspace-tab-header-container .clickable-icon:has(svg.sidebar-right) {
+    display: none !important;
+}
+
+/* Esconder o botão New Tab (+) - mais específico */
+.workspace-tab-header-container .clickable-icon svg.lucide-plus {
+    display: none !important;
+}
+
+.workspace-tab-header-container .clickable-icon:has(svg.lucide-plus) {
+    display: none !important;
+}
+
+/* Esconder por aria-label - mais específico */
+.workspace-tab-header-container .clickable-icon[aria-label="New tab"] {
+    display: none !important;
+}
+
+/* Método alternativo mais específico */
+.workspace-tab-header-new-tab {
+    display: none !important;
+}
+
+/* Remover espaço/gap onde estavam os botões */
+.workspace-tab-header-container {
+    gap: 0 !important;
+}
+
+/* Ajustar container das abas para não deixar espaço */
+.workspace-tab-header-container-inner {
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* Forçar remoção de qualquer espaço residual 
+.workspace-tab-header-container::after {
+    display: none !important;
+}*/
+
+.workspace-tab-header-tab-list {
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+}

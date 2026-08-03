@@ -1,0 +1,35 @@
+/* ========================================
+   OBSIDIAN CENTER TABLES CSS SNIPPET
+   ======================================== */
+
+/* Centralizar tabelas no modo leitura */
+.markdown-rendered table {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: fit-content !important;
+}
+
+/* Centralizar tabelas no modo edição */
+.cm-embed-block.cm-table-widget {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: fit-content !important;
+}
+
+/* Para o wrapper da tabela no modo edição */
+.table-wrapper {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: fit-content !important;
+}
+
+/* Centralizar no editor de código-fonte também */
+.markdown-source-view.mod-cm6 .cm-table-widget {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block !important;
+    width: fit-content !important;
+}

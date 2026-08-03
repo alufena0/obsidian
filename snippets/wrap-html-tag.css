@@ -1,0 +1,74 @@
+/* ========================================
+   OBSIDIAN HTML TAGS TEXT WRAP SNIPPET
+   Quebra automática de texto em tags HTML
+   ======================================== */
+
+/* Para todas as tags HTML no modo EDITING */
+.cm-html-embed,
+.cm-line .cm-html-embed {
+  white-space: normal !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+  word-break: break-word !important;
+  display: inline !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Especificamente para tag <font> */
+.markdown-source-view font,
+.cm-content font {
+  white-space: normal !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+  word-break: break-word !important;
+  display: inline !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: inherit !important;
+}
+
+/* Para modo PREVIEW */
+.markdown-preview-view font,
+.markdown-rendered font {
+  white-space: normal !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+  word-break: break-word !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: inherit !important;
+}
+
+/* Para outras tags HTML comuns */
+.markdown-source-view span,
+.markdown-source-view div,
+.markdown-source-view p,
+.cm-content span,
+.cm-content div {
+  white-space: normal !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+}
+
+/* Para linhas de código com HTML */
+.cm-line:has(.cm-html-embed) {
+  white-space: normal !important;
+  overflow-x: visible !important;
+}
+
+/* Prevenir scroll horizontal em elementos HTML */
+.markdown-source-view .cm-line,
+.cm-content .cm-line {
+  overflow-x: visible !important;
+}
+
+/* Para tags HTML em geral no preview */
+.markdown-preview-view span,
+.markdown-preview-view div,
+.markdown-rendered span,
+.markdown-rendered div {
+  white-space: normal !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+}

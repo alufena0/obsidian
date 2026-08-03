@@ -1,0 +1,15 @@
+/*for legacy editor*/
+.CodeMirror-activeline.CodeMirror-linebackground{
+  background-color: #e4e4e4 !important;
+  z-index: 10 !important;
+}
+/*for live preview mode*/
+.cm-active.cm-line{
+  background-color: #e4e4e4 !important;
+  z-index: 10 !important;
+}
+/*for live preview mode code block*/
+div.cm-active.HyperMD-codeblock.HyperMD-codeblock-bg.cm-line{
+  background-color: #e4e4e4 !important;
+  z-index: 10 !important;
+}

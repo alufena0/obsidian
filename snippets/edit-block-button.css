@@ -1,0 +1,34 @@
+/* edit-block-button.css */
+
+/*
+.edit-block-button {
+  display: none !important;
+}
+*/
+
+.edit-block-button {
+  /*
+   * REMOVED — static positioning that used to anchor the button:
+   *
+   *   top: unset !important;    <- reset top
+   *   bottom: 0 !important;     <- pin to bottom of container
+   *   right: unset !important;  <- reset right
+   *   left: 0 !important;       <- pin to left of container
+   *
+   * These 4 lines are now handled by the sticky-edit-button plugin,
+   * which recalculates top/left dynamically on scroll.
+   * Keeping them here with !important overrides the JS and breaks the sticky behavior.
+   */
+
+  cursor: pointer !important;
+  width: 32px !important;
+  height: 32px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.edit-block-button svg {
+  width: 20px !important;
+  height: 20px !important;
+}

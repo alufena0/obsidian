@@ -1,0 +1,4 @@
+/* Altera o fundo da área de edição e visualização */
+.markdown-preview-view, .cm-s-obsidian {
+  background-color: #f8f8f8 !important;
+}

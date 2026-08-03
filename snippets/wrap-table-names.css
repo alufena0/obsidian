@@ -1,0 +1,28 @@
+/* ========================================
+   OBSIDIAN TABLE TEXT WRAP - MODO EDIÇÃO
+   ======================================== */
+
+/* Seletor principal para o wrapper das células */
+.cm-embed-block.cm-table-widget .table-cell-wrapper {
+    white-space: normal !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+}
+
+/* Para as células da tabela no editor */
+.cm-embed-block.cm-table-widget .table-editor td,
+.cm-embed-block.cm-table-widget .table-editor th {
+    white-space: normal !important;
+}
+
+/* Forçar quebra para div dentro das células */
+.table-editor td div,
+.table-editor th div {
+    white-space: normal !important;
+    word-break: break-word !important;
+}
+
+/* Seletor mais específico baseado no HTML que você enviou */
+.markdown-rendered .cm-table-widget .table-cell-wrapper {
+    white-space: normal !important;
+}

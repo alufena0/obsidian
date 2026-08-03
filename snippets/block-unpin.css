@@ -1,0 +1,47 @@
+/* Snippet para bloquear o botão Unpin das abas no Obsidian */
+
+/* PRINCIPAIS TABS (área central) - Bloqueia botão de unpin */
+.mod-root .mod-pinned {
+    pointer-events: none !important;
+    cursor: not-allowed !important;
+}
+
+/* SIDEBAR TABS - Bloqueia botão de unpin nas abas da sidebar */
+.workspace-tab-header-status-icon.mod-pinned {
+    pointer-events: none !important;
+    cursor: not-allowed !important;
+}
+
+/* ALTERNATIVA - Para esconder completamente o botão (descomente se preferir) */
+/*
+.mod-root .mod-pinned {
+    display: none !important;
+}
+
+.workspace-tab-header-status-icon.mod-pinned {
+    display: none !important;
+}
+*/
+
+/* VERSÕES ADICIONAIS - Caso as classes acima não funcionem */
+.workspace-tab-header-pin-button {
+    pointer-events: none !important;
+    cursor: not-allowed !important;
+}
+
+/* Bloqueia todos os elementos com atributo de unpin */
+[aria-label="Unpin"] {
+    pointer-events: none !important;
+    cursor: not-allowed !important;
+}
+
+/* Bloqueia cliques nos SVGs dos botões pin */
+.mod-pinned svg {
+    pointer-events: none !important;
+}
+
+/* Remove efeitos de hover */
+.mod-pinned:hover {
+    background-color: transparent !important;
+    color: inherit !important;
+}

@@ -1,0 +1,54 @@
+/* Top of file */
+
+.markdown-source-view.mod-cm6 .cm-scroller {
+    padding-top: 10px;
+}
+
+/* Embeds */
+.markdown-embed .markdown-preview-view {
+    padding: 5px 5px 0px 5px;
+}
+
+/* Right sidebar, esp todoist*/
+.workspace-split.mod-right-split .node-insert-event {
+    padding: 0px 5px 0px 5px;
+}
+
+.workspace-split.mod-right-split .markdown-source-view.mod-cm6.is-folding .cm-contentContainer :not(.mod-root) {
+    padding-left: 1px;
+}
+
+.workspace-split.mod-right-split .workspace-tabs:last-child {
+    padding-bottom: 0px;
+}
+
+/* Left sidebar
+     */
+.workspace-split.mod-left-split .node-insert-event {
+    padding: 0px 0px 0px 0px;
+/* margin: 0px 0px 0px -23px; */
+
+}
+
+.workspace-split.mod-left-split .markdown-source-view.mod-cm6.is-folding .cm-contentContainer :not(.mod-root) {
+    padding-left: 1px;
+}
+
+.workspace-split.mod-left-split .workspace-tabs:last-child {
+    padding-bottom: 0px;
+}
+
+/* Pdfs https://discord.com/channels/686053708261228577/931552763467411487/983058422796791898 */
+.workspace-leaf-content[data-type="pdf"] .view-content {
+    padding: unset;
+}
+
+.workspace-leaf-content[data-type="pdf"] .view-content iframe {
+  border: unset;
+}
+
+/* Calendar */
+#calendar-container {
+	padding: 0px
+			 0px;
+}

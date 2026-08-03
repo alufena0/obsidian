@@ -1,0 +1,43 @@
+/* Snippet CSS com emojis desaturados para um estilo mais clássico */
+/* Aplicando filtro de dessaturação a todos os ícones */
+.nav-folder-title-content::before,
+.nav-file-title-content::before {
+  filter: grayscale(20%) opacity(0.8);
+}
+/* Pastas raiz */
+.nav-folder > .tree-item-self > .nav-folder-title-content::before {
+  content: '🗂️';
+  margin-right: 0px;
+}
+/* Subpastas */
+.nav-folder .tree-item-children .nav-folder-title-content::before {
+  content: '📂';
+  margin-right: 0px;
+}
+/* Arquivos padrão (Markdown)
+.nav-file-title[data-path$=".md"] .nav-file-title-content::before {
+  content: '📝';
+  margin-right: 1px;
+}
+/* Arquivos HTML
+.nav-file-title[data-path$=".html"] .nav-file-title-content::before {
+  content: '🌎';
+  margin-right: 1px;
+}
+/* Arquivos PDF
+.nav-file-title[data-path$=".pdf"] .nav-file-title-content::before {
+  content: '📕';
+  margin-right: 1px;
+}
+*/
+/* Arquivos de imagem 
+.nav-file-title[data-path$=".jpg"] .nav-file-title-content::before,
+.nav-file-title[data-path$=".jpeg"] .nav-file-title-content::before,
+.nav-file-title[data-path$=".png"] .nav-file-title-content::before,
+.nav-file-title[data-path$=".gif"] .nav-file-title-content::before,
+.nav-file-title[data-path$=".bmp"] .nav-file-title-content::before,
+.nav-file-title[data-path$=".svg"] .nav-file-title-content::before,
+.nav-file-title[data-path$=".webp"] .nav-file-title-content::before {
+  content: '🖼️';
+  margin-right: 1px;
+}*/

@@ -1,0 +1,9 @@
+.view-header-title-container {
+justify-content: start;
+}
+
+.view-header {
+border-bottom: solid;
+border-width: 1.5px;
+border-color: #e0e0e0;
+}

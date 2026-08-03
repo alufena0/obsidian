@@ -1,0 +1,24 @@
+.workspace-tab-header-container-inner {
+  gap: 0px !important;
+}
+
+.workspace-tab-header-container-inner > * {
+  border-radius: 0px !important;
+}
+
+.setting-items,
+div.setting-items,
+.setting-item,
+div.setting-item,
+.setting-group-search,
+div.setting-group-search {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* Remove qualquer background de containers pai */
+.vertical-tab-content,
+.vertical-tab-content-container {
+  background: transparent !important;
+  background-color: transparent !important;
+}

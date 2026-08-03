@@ -1,0 +1,187 @@
+/* ===== MODO EDITING ===== */
+/* Linhas no editor */
+/* background-image funciona em code blocks onde ::after falha */
+.cm-line {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(128, 128, 128, 0.14) 0px,
+        rgba(128, 128, 128, 0.14) 1px,
+        transparent 1px
+    );
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: relative;
+}
+
+.theme-dark .cm-line {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.14) 0px,
+        rgba(255, 255, 255, 0.14) 1px,
+        transparent 1px
+    );
+}
+
+/* Linha no final do documento */
+.cm-editor .cm-line:last-child::before {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: rgba(128, 128, 128, 0.14);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.theme-dark .cm-editor .cm-line:last-child::before {
+    background: rgba(255, 255, 255, 0.14);
+}
+
+/* Linha no início dos code blocks no editor */
+div[class*="HyperMD-codeblock-begin"] {
+    border-top: 1px solid rgba(128, 128, 128, 0.14) !important;
+}
+
+.theme-dark div[class*="HyperMD-codeblock-begin"] {
+    border-top: 1px solid rgba(255, 255, 255, 0.14) !important;
+}
+
+/* ===== TABLES, MATH E CODE BLOCKS NO EDITING MODE ===== */
+/* Confirmado via DevTools: esses elementos são widgets cm-embed-block,
+   fora do fluxo normal do .cm-line. Recebem a linha diretamente. */
+.cm-embed-block {
+    position: relative;
+}
+
+.cm-embed-block::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: rgba(128, 128, 128, 0.14);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.theme-dark .cm-embed-block::before {
+    background: rgba(255, 255, 255, 0.14);
+}
+
+/* ===== MODO READING ===== */
+/* Linhas em elementos de texto */
+.markdown-reading-view p,
+.markdown-reading-view h1,
+.markdown-reading-view h2,
+.markdown-reading-view h3,
+.markdown-reading-view h4,
+.markdown-reading-view h5,
+.markdown-reading-view h6,
+.markdown-reading-view li,
+.markdown-reading-view blockquote {
+    position: relative;
+}
+
+.markdown-reading-view p::after,
+.markdown-reading-view h1::after,
+.markdown-reading-view h2::after,
+.markdown-reading-view h3::after,
+.markdown-reading-view h4::after,
+.markdown-reading-view h5::after,
+.markdown-reading-view h6::after,
+.markdown-reading-view li::after,
+.markdown-reading-view blockquote::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: rgba(128, 128, 128, 0.14);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.theme-dark .markdown-reading-view p::after,
+.theme-dark .markdown-reading-view h1::after,
+.theme-dark .markdown-reading-view h2::after,
+.theme-dark .markdown-reading-view h3::after,
+.theme-dark .markdown-reading-view h4::after,
+.theme-dark .markdown-reading-view h5::after,
+.theme-dark .markdown-reading-view h6::after,
+.theme-dark .markdown-reading-view li::after,
+.theme-dark .markdown-reading-view blockquote::after {
+    background: rgba(255, 255, 255, 0.14);
+}
+
+/* Linhas em imagens - AMBOS OS MODOS */
+.internal-embed:has(img),
+.image-embed {
+    position: relative;
+}
+
+.internal-embed:has(img)::after,
+.image-embed::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: rgba(128, 128, 128, 0.14);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.theme-dark .internal-embed:has(img)::after,
+.theme-dark .image-embed::after {
+    background: rgba(255, 255, 255, 0.14);
+}
+
+/* ===== TABLES - MODO READING ===== */
+.markdown-reading-view .table-wrapper {
+    position: relative;
+}
+
+.markdown-reading-view .table-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: rgba(128, 128, 128, 0.14);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.theme-dark .markdown-reading-view .table-wrapper::before {
+    background: rgba(255, 255, 255, 0.14);
+}
+
+/* ===== MATH BLOCKS - MODO READING ===== */
+.markdown-reading-view div:has(> .math.math-block) {
+    position: relative;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.markdown-reading-view div:has(> .math.math-block)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: rgba(128, 128, 128, 0.14);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.theme-dark .markdown-reading-view div:has(> .math.math-block)::before {
+    background: rgba(255, 255, 255, 0.14);
+}

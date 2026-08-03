@@ -1,0 +1,32 @@
+/* ========================================
+   OBSIDIAN CALLOUT TEXT WRAP SNIPPET
+   ======================================== */
+
+/* Conteúdo dos callouts */
+.callout-content {
+    white-space: normal !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+}
+
+/* Parágrafos dentro dos callouts */
+.callout-content p {
+    white-space: normal !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    word-break: break-word !important;
+}
+
+/* Título dos callouts também */
+.callout-title-inner {
+    white-space: normal !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+}
+
+/* Para elementos específicos dentro do callout */
+.callout-content strong,
+.callout-content em,
+.callout-content span {
+    white-space: normal !important;
+}

@@ -1,0 +1,15 @@
+/* Global search results */
+/* global search results: reduce gap between note title (bold) and hor. line above */
+
+.nav-header {
+padding: 4px 230px 0px 0px;
+positon: left;
+border-bottom: solid;
+border-width: 1.5px;
+border-color: #e0e0e0;
+}
+
+.nav-action-button {
+color: var(--text-muted);
+padding: 0px 10px 3px 10px;
+}

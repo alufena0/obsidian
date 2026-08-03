@@ -1,0 +1,16 @@
+/* Apply background color and text color to h1 and h2 headers in both editor and preview */
+.markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-preview-view h3,
+.markdown-preview-view h4,
+.markdown-preview-view h5,
+.markdown-preview-view h6,
+.cm-header-1,
+.cm-header-2,
+.cm-header-3,
+.cm-header-4,
+.cm-header-5,
+.cm-header-6 {
+background-color: yellow; /* Background color */
+color: black; /* Text color */
+} 

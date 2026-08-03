@@ -1,0 +1,32 @@
+/* =================================================
+   📍 HEADER POINTER CURSOR - OBSIDIAN SNIPPET
+   =================================================
+   Adiciona cursor pointer (mãozinha) nos headers
+   Coloque este arquivo na pasta: .obsidian/snippets/
+   ================================================= */
+
+.cm-line > div > div:first-child {
+    cursor: pointer !important;
+}
+
+/* Versão alternativa - se você quiser apenas nos símbolos # */
+/*
+.cm-formatting-header {
+    cursor: pointer !important;
+}
+
+
+/* Versão extra interativa - com animação de brilho */
+/*
+@keyframes header-glow {
+    0% { text-shadow: none; }
+    50% { text-shadow: 0 0 5px var(--text-accent); }
+    100% { text-shadow: none; }
+}
+
+.cm-header-1:hover,
+.cm-header-2:hover,
+.cm-header-3:hover {
+    animation: header-glow 1s ease-in-out;
+}
+*/

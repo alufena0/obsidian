@@ -1,0 +1,23 @@
+.workspace-tab-header-tab-list > span {
+    display: none;
+}
+
+// .workspace-tab-header-new-tab > span {
+//     display: none;
+// }
+
+.status-bar-item.plugin-editing-toolbar {
+    display:none;
+}
+
+.status-bar-item.plugin-sync {
+	display:none;
+}
+
+.status-bar-item.plugin-editor-status {
+    display: none;
+}
+
+.sidebar-toggle-button{
+	display: none;
+}

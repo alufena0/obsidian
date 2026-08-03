@@ -1,0 +1,18 @@
+.cm-line:has(.internal-embed.image-embed) {
+  display: flex !important;
+  align-items: center !important;
+  min-height: 0 !important;
+}
+
+.cm-line:has(.internal-embed.image-embed) .cm-widgetBuffer,
+.cm-line:has(.internal-embed.image-embed) .swcm6-line-end-marker {
+  display: none !important;
+  height: 0 !important;
+  width: 0 !important;
+  line-height: 0 !important;
+  font-size: 0 !important;
+}
+
+.cm-line:has(.internal-embed.image-embed) br {
+  display: none !important;
+}

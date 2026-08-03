@@ -1,0 +1,36 @@
+/* =================================================
+   ?? INLINE CODE POINTER CURSOR - OBSIDIAN SNIPPET
+   =================================================
+   Adiciona cursor pointer (mãozinha) no inline code
+   Coloque este arquivo na pasta: .obsidian/snippets/
+   ================================================= */
+
+/* Reading mode */
+:not(pre) > code {
+    cursor: pointer !important;
+}
+
+/* Live Preview / Source mode */
+.cm-inline-code {
+    cursor: pointer !important;
+}
+
+/* CodeBlock Customizer wrapper (se usar o plugin) */
+.codeblock-customizer-inline-code-wrapper {
+    cursor: pointer !important;
+}
+
+/* Botão copiar */
+.codeblock-customizer-copy-code {
+    cursor: pointer !important;
+}
+
+/* Botão selecionar */
+.codeblock-customizer-select-code {
+    cursor: pointer !important;
+}
+
+/* Botão colapsar (chevron) */
+.codeblock-customizer-header-collapse {
+    cursor: pointer !important;
+}

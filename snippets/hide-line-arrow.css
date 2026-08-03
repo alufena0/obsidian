@@ -1,0 +1,16 @@
+.nav-folder-collapse-indicator svg {
+  display: none;
+}
+
+body {
+    --nav-indentation-guide-width: unset;
+}
+
+.tree-item-icon.collapse-icon {
+    display: none;
+}
+
+.tree-item-self {
+    padding-left: 0 !important; /* Remove o espaçamento à esquerda */
+    margin-left: 5px; /* Ajuste fino para puxar os títulos mais à esquerda */
+}

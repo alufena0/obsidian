@@ -1,0 +1,34 @@
+.cm-line > .internal-embed.image-embed {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+}
+
+.cm-line > .internal-embed.image-embed .image-wrapper {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.markdown-source-view.mod-cm6 .HyperMD-quote .internal-embed.image-embed {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.markdown-preview-view .el-p:has(> p > span.internal-embed.image-embed) {
+    text-align: center !important;
+}
+
+.markdown-preview-view span.internal-embed.image-embed {
+    display: inline-block !important;
+}
+
+.markdown-preview-view span.internal-embed.image-embed img {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.markdown-preview-view .el-blockquote blockquote p:has(> span.internal-embed.image-embed) {
+    text-align: center !important;
+}

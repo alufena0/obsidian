@@ -1,0 +1,96 @@
+/* Snippet para desativar wikilinks em blocos de código do Obsidian */
+
+/* ==================== BLOCOS DE COMENTÁRIOS EM JS ==================== */
+/* Desativa interação com o elemento <p> que contém links em blocos de código */
+.cm-comment.cm-hmd-codeblock div p {
+  pointer-events: none !important;
+}
+
+/* Remove formatação de links dentro de comentários de código */
+.cm-comment.cm-hmd-codeblock div p a,
+.cm-comment.cm-hmd-codeblock a.internal-link {
+  color: inherit !important;
+  text-decoration: none !important;
+  pointer-events: none !important;
+  cursor: text !important;
+  background-color: transparent !important;
+  border-bottom: none !important;
+}
+
+/* Restaura os colchetes duplos para links em comentários */
+.cm-comment.cm-hmd-codeblock div p a::before {
+  content: "[[" !important;
+  color: inherit !important;
+}
+
+.cm-comment.cm-hmd-codeblock div p a::after {
+  content: "]]" !important;
+  color: inherit !important;
+}
+
+/* ==================== TODAS AS LINGUAGENS ==================== */
+/* Desativa links em qualquer bloco de código em modo fonte */
+.markdown-source-view.mod-cm6 .cm-comment.cm-hmd-codeblock a,
+.markdown-source-view.mod-cm6 .HyperMD-codeblock .cm-hmd-internal-link,
+.markdown-source-view.mod-cm6 pre .cm-comment a {
+  pointer-events: none !important;
+  cursor: text !important;
+  color: inherit !important;
+  text-decoration: none !important;
+  border-bottom: none !important;
+  background-color: transparent !important;
+}
+
+/* Desativa links em qualquer bloco de código em modo de visualização */
+.markdown-preview-view pre code a,
+.markdown-preview-view code span.internal-link {
+  pointer-events: none !important;
+  cursor: text !important;
+  color: inherit !important;
+  text-decoration: none !important;
+  border-bottom: none !important;
+  background-color: transparent !important;
+}
+
+/* ==================== COMENTÁRIOS EM VÁRIAS LINGUAGENS ==================== */
+/* Trata comentários em qualquer linha que contenha a classe cm-comment */
+.markdown-source-view.mod-cm6 .cm-line:has(.cm-comment) a.internal-link,
+.markdown-preview-view pre code .comment a,
+.markdown-source-view pre code .comment a {
+  pointer-events: none !important;
+  cursor: text !important;
+  color: inherit !important;
+  text-decoration: none !important;
+  border-bottom: none !important;
+  background-color: transparent !important;
+}
+
+/* Restaura colchetes duplos em todas as linguagens */
+.markdown-source-view.mod-cm6 .cm-line:has(.cm-comment) a.internal-link::before {
+  content: "[[" !important;
+  color: inherit !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-line:has(.cm-comment) a.internal-link::after {
+  content: "]]" !important;
+  color: inherit !important;
+}
+
+/* ==================== OUTROS SELETORES ESPECÍFICOS ==================== */
+/* Editor CodeMirror 6 */
+.cm-editor .cm-comment .cm-hmd-internal-link {
+  pointer-events: none !important;
+  text-decoration: none !important;
+  border-bottom: none !important;
+  color: inherit !important;
+}
+
+/* Preview de bloco de código */
+.markdown-rendered pre code .internal-link,
+.markdown-rendered code .internal-link {
+  pointer-events: none !important;
+  cursor: text !important;
+  color: inherit !important;
+  text-decoration: none !important;
+  border-bottom: none !important;
+}

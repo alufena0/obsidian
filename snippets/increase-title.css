@@ -1,0 +1,13 @@
+/* Estilo base que estava funcionando */
+.workspace-leaf-content[data-type="markdown"] div.inline-title,
+.workspace-split div.inline-title,
+div.inline-title[contenteditable="true"],
+.markdown-source-view div.inline-title {
+    font-size: 35px !important;
+}
+
+/* Tentativa APENAS para o modo reading */
+.markdown-preview-view:not(.markdown-source-view) div.inline-title {
+    position: relative !important;
+    top: -30px !important;
+}

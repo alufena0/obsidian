@@ -1,0 +1,13 @@
+/* .obsidian/snippets/iconize-fix.css */
+.iconize-icon {
+  margin: 0 0 0 0 !important;
+}
+/* Esconde o ícone nativo só quando o Iconize NÃO injetou nada */
+.mod-root .workspace-tab-header-inner-icon:not(:has(.iconize-icon)) svg.svg-icon {
+    display: none !important;
+}
+/* Borda no ícone da aba ativa */
+.nav-file-title .iconize-icon svg,
+.nav-folder-title .iconize-icon svg {
+    filter: drop-shadow(0 0 1px rgba(255,255,255,0.7));
+}

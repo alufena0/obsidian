@@ -1,0 +1,36 @@
+/* Just here as an example of variables */
+body {
+  --scrollbar-bg: lightblue;    /* Example color, use the existing value for non-testing purposes */
+  --scrollbar-thumb-bg: lightgray; /* Example color, use the existing value for non-testing purposes */
+  --scrollbar-width: 13px;
+  --scrollbar-height: 15px;
+  --scrollbar-border-radius: var(--radius-l);
+  --scrollbar-thumb-border-radius: var(--radius-l);
+  --scrollbar-thumb-inset: 2px 2px 2px 3px; /* IMO should just be 2px */
+}
+
+body:not(.native-scrollbars) ::-webkit-scrollbar {
+  background-color: var(--scrollbar-bg);
+  width: var(--scrollbar-width);                           /* CHANGED now a variable */
+  height: var(--scrollbar-height);                          /* CHANGED now a variable */
+  -webkit-border-radius: var(--scrollbar-border-radius);   /* CHANGED now a variable */
+  background-color: transparent; /* NOTE: This is the line breaking --scrollbar-bg and will not be changed/discussed here */
+}
+
+body:not(.native-scrollbars) ::-webkit-scrollbar-track {
+  /* REMOVED */
+}
+
+body:not(.native-scrollbars) ::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb-bg);
+  -webkit-border-radius: var(--scrollbar-thumb-border-radius);  /* CHANGED now a variable */
+  background-clip: padding-box;
+  border: solid transparent;                                    /* CHANGED removed 2px */
+  border-width: var(--scrollbar-thumb-inset);                   /* CHANGED now a variable */
+  min-height: 45px; /* Does not seem important enough for a variable */
+  border-radius: 0px;
+}
+
+body:not(.native-scrollbars) ::-webkit-scrollbar-thumb:active {
+  /* REMOVED */
+}

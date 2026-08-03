@@ -1,0 +1,67 @@
+/* Snippet para deixar itálico similar ao negrito no Obsidian */
+/* Reduz a intensidade da cor, aumenta levemente o tamanho da fonte e adiciona peso */
+
+/* Para o modo de visualização (Reading Mode) */
+.markdown-preview-view em {
+    opacity: 0.8; /* Reduz a intensidade da cor igual ao negrito */
+    font-size: 1.05em; /* Aumenta ligeiramente o tamanho da fonte */
+    font-weight: 600; /* Adiciona peso similar ao negrito */
+}
+
+/* Para o modo de edição (Live Preview) */
+.cm-em {
+    opacity: 0.8;
+    font-size: 1.05em;
+    font-weight: 600;
+}
+
+/* Para o editor markdown tradicional */
+.markdown-source-view .cm-formatting-emphasis + .cm-em,
+.markdown-source-view .cm-em:not(.cm-formatting) {
+    opacity: 0.8;
+    font-size: 1.05em;
+    font-weight: 600;
+}
+
+/* ADICIONADO: Para tabelas no modo de visualização */
+.markdown-preview-view table em,
+.markdown-preview-view th em,
+.markdown-preview-view td em {
+    opacity: 0.8;
+    font-size: 1.05em;
+    font-weight: 600;
+}
+
+/* ADICIONADO: Para tabelas no modo de edição (Live Preview) */
+.HyperMD-table .cm-em,
+.cm-table-widget .cm-em {
+    opacity: 0.8;
+    font-size: 1.05em;
+    font-weight: 600;
+}
+
+/* ADICIONADO: Para células de tabela específicas */
+.markdown-rendered table em,
+.table-view-table em {
+    opacity: 0.8;
+    font-size: 1.05em;
+    font-weight: 600;
+}
+
+/* ADICIONADO: Para callouts */
+.callout em,
+.callout-content em,
+.markdown-preview-view .callout em,
+.markdown-rendered .callout em {
+    opacity: 0.8;
+    font-size: 1.05em;
+    font-weight: 600;
+}
+
+/* Para callouts no modo de edição */
+.HyperMD-callout .cm-em,
+.callout .cm-em {
+    opacity: 0.8;
+    font-size: 1.05em;
+    font-weight: 600;
+}

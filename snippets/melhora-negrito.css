@@ -1,0 +1,67 @@
+/* Snippet para suavizar negrito no Obsidian */
+/* Reduz a intensidade da cor e aumenta levemente o tamanho da fonte */
+
+/* Para o modo de visualização (Reading Mode) */
+.markdown-preview-view strong {
+    opacity: 0.8; /* Reduz a intensidade da cor */
+    font-size: 1.05em; /* Aumenta ligeiramente o tamanho da fonte */
+    font-weight: 600; /* Peso um pouco mais leve que o bold padrão (700) */
+}
+
+/* Para o modo de edição (Live Preview) */
+.cm-strong {
+    opacity: 0.8;
+    font-size: 1.05em;
+    font-weight: 600;
+}
+
+/* Para o editor markdown tradicional */
+.markdown-source-view .cm-formatting-strong + .cm-strong,
+.markdown-source-view .cm-strong:not(.cm-formatting) {
+    opacity: 0.8;
+    font-size: 1.05em;
+    font-weight: 600;
+}
+
+/* ADICIONADO: Para tabelas no modo de visualização */
+.markdown-preview-view table strong,
+.markdown-preview-view th strong,
+.markdown-preview-view td strong {
+    opacity: 0.8;
+    font-size: 1.05em;
+    font-weight: 600;
+}
+
+/* ADICIONADO: Para tabelas no modo de edição (Live Preview) */
+.HyperMD-table .cm-strong,
+.cm-table-widget .cm-strong {
+    opacity: 0.8;
+    font-size: 1.05em;
+    font-weight: 600;
+}
+
+/* ADICIONADO: Para células de tabela específicas */
+.markdown-rendered table strong,
+.table-view-table strong {
+    opacity: 0.8;
+    font-size: 1.05em;
+    font-weight: 600;
+}
+
+/* ADICIONADO: Para callouts */
+.callout strong,
+.callout-content strong,
+.markdown-preview-view .callout strong,
+.markdown-rendered .callout strong {
+    opacity: 0.8;
+    font-size: 1.05em;
+    font-weight: 600;
+}
+
+/* Para callouts no modo de edição */
+.HyperMD-callout .cm-strong,
+.callout .cm-strong {
+    opacity: 0.8;
+    font-size: 1.05em;
+    font-weight: 600;
+}

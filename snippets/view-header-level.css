@@ -1,0 +1,47 @@
+/* Estilo geral dos rótulos (modo leitura e edição passiva) */
+.cm-line.HyperMD-header:not(.cm-active) .cm-header-1::before,
+.markdown-preview-view h1::before {
+  content: "h1";
+}
+.cm-line.HyperMD-header:not(.cm-active) .cm-header-2::before,
+.markdown-preview-view h2::before {
+  content: "h2";
+}
+.cm-line.HyperMD-header:not(.cm-active) .cm-header-3::before,
+.markdown-preview-view h3::before {
+  content: "h3";
+}
+.cm-line.HyperMD-header:not(.cm-active) .cm-header-4::before,
+.markdown-preview-view h4::before {
+  content: "h4";
+}
+.cm-line.HyperMD-header:not(.cm-active) .cm-header-5::before,
+.markdown-preview-view h5::before {
+  content: "h5";
+}
+.cm-line.HyperMD-header:not(.cm-active) .cm-header-6::before,
+.markdown-preview-view h6::before {
+  content: "h6";
+}
+
+/* Aparência do rótulo */
+.cm-line.HyperMD-header:not(.cm-active) .cm-header-1::before,
+.cm-line.HyperMD-header:not(.cm-active) .cm-header-2::before,
+.cm-line.HyperMD-header:not(.cm-active) .cm-header-3::before,
+.cm-line.HyperMD-header:not(.cm-active) .cm-header-4::before,
+.cm-line.HyperMD-header:not(.cm-active) .cm-header-5::before,
+.cm-line.HyperMD-header:not(.cm-active) .cm-header-6::before,
+.markdown-preview-view h1::before,
+.markdown-preview-view h2::before,
+.markdown-preview-view h3::before,
+.markdown-preview-view h4::before,
+.markdown-preview-view h5::before,
+.markdown-preview-view h6::before {
+  color: #999;
+  font-size: 0.7em;
+  font-family: monospace;
+  display: inline-block;
+  margin-right: 0.4em;
+  vertical-align: baseline;
+  line-height: 1;
+}

@@ -1,0 +1,8 @@
+/* FORÇA COR DOS EMOJIS - NÃO É PROBLEMA DE FONTE! */
+
+/* Força cor original dos emojis no inline title */
+.inline-title {
+    color: revert !important;
+    -webkit-text-fill-color: revert !important;
+    text-fill-color: revert !important;
+}

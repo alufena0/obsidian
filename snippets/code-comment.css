@@ -1,0 +1,7 @@
+.cm-comment,
+.token.comment {
+    color: #077d18 !important; /* Verde neon, ajuste se quiser */
+    font-style: italic !important; /* Itálico */
+    opacity: 0.5; /* Opacidade reduzida */
+    font-size: 0.9em !important; /* Tamanho reduzido da fonte */
+}

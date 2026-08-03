@@ -1,0 +1,41 @@
+/* Adiciona linhas alternadas ao editor */
+.cm-line,
+.markdown-preview-view div,
+.markdown-embed-content div,
+.markdown-reading-view div,
+.image-embed {
+    position: relative;
+}
+
+/* Aplica o fundo em linhas pares com opacidade ajustada */
+.cm-line:nth-child(even),
+.markdown-preview-view div:nth-child(even),
+.markdown-embed-content div:nth-child(even),
+.markdown-reading-view div:nth-child(even),
+.image-embed:nth-child(even) {
+    background-color: rgba(128, 128, 128, 0.045);
+}
+
+/* Ajusta o modo escuro com opacidade ajustada */
+.theme-dark .cm-line:nth-child(even),
+.theme-dark .markdown-preview-view div:nth-child(even),
+.theme-dark .markdown-embed-content div:nth-child(even),
+.theme-dark .markdown-reading-view div:nth-child(even),
+.theme-dark .image-embed:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.04);
+}
+
+/* Ajuste específico para containers de imagens */
+.image-embed {
+    display: block;
+    position: relative;
+}
+
+/* A linha que contém o embed de imagem sempre pega a mesma cor leve fixa,
+   evitando que ela fique "sem cor" ou destoando do bloco ao redor */
+.cm-line:has(.internal-embed.image-embed) {
+    background-color: rgba(128, 128, 128, 0.045) !important;
+}
+.theme-dark .cm-line:has(.internal-embed.image-embed) {
+    background-color: rgba(255, 255, 255, 0.04) !important;
+}

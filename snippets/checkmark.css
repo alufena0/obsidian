@@ -1,0 +1,36 @@
+/* === MODO READING === */
+
+.markdown-reading-view input.task-list-item-checkbox {
+  background-color: white !important;
+  border: 1.5px solid #888 !important;
+}
+
+/* Check verde puro (sem opacidade, sem filtro) */
+.markdown-reading-view input.task-list-item-checkbox:checked::after {
+  background-color: #00ff00 !important; /* verde 100% */
+}
+
+
+/* === MODO EDITING (Live Preview) === */
+
+.markdown-source-view.mod-cm6 input[type="checkbox"] {
+  background-color: white !important;
+  border: 1.5px solid #888 !important;
+}
+
+/* Check verde puro também no modo edição */
+.markdown-source-view.mod-cm6 input[type="checkbox"]:checked::after {
+  background-color: #00ff00 !important; /* verde 100% */
+}
+
+/* === READING VIEW === */
+.markdown-reading-view input.task-list-item-checkbox:hover {
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1); /* leve sombra para indicar hover */
+  cursor: pointer;
+}
+
+/* === EDITING (Live Preview) === */
+.markdown-source-view.mod-cm6 input[type="checkbox"]:hover {
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1); /* sombra leve */
+  cursor: pointer;
+}

@@ -1,0 +1,40 @@
+/* Remove apenas o negrito padrão dos cabeçalhos, preservando negrito manual */
+
+/* Para Reading View (Preview) */
+.markdown-preview-view table th {
+  font-weight: normal !important;
+}
+
+/* Preserva negrito manual no Reading View */
+.markdown-preview-view table th strong,
+.markdown-preview-view table th b {
+  font-weight: bold !important;
+}
+
+/* Para Live Preview (Editor) */
+.cm-editor table th {
+  font-weight: normal !important;
+}
+
+/* Seletores mais específicos para Live Preview */
+.cm-editor .cm-table-widget th {
+  font-weight: normal !important;
+}
+
+/* Preserva negrito manual no Live Preview */
+.cm-editor table th strong,
+.cm-editor table th .cm-strong,
+.cm-editor .cm-table-widget th strong,
+.cm-editor .cm-table-widget th .cm-strong {
+  font-weight: bold !important;
+}
+
+/* Fallback para outros casos */
+.workspace-leaf-content[data-type="markdown"] table th {
+  font-weight: normal !important;
+}
+
+.workspace-leaf-content[data-type="markdown"] table th strong,
+.workspace-leaf-content[data-type="markdown"] table th .cm-strong {
+  font-weight: bold !important;
+}

@@ -1,0 +1,32 @@
+/*
+  obsidian-table-hover-simple.css
+  ================================
+  Simples, universal, funciona com qualquer número de colunas/linhas
+*/
+
+/* Célula ao passar mouse: AZUL FORTE */
+.cm-editor .cm-content table th:hover,
+.cm-editor .cm-content table td:hover,
+.markdown-preview-view table th:hover,
+.markdown-preview-view table td:hover {
+  background-color: rgba(59, 130, 246, 0.35) !important;
+  box-shadow: inset 0 0 12px rgba(59, 130, 246, 0.4) !important;
+  transition: all 120ms ease !important;
+}
+
+/* Linha inteira ao passar mouse: AZUL SUAVE */
+.cm-editor .cm-content table tr:hover th,
+.cm-editor .cm-content table tr:hover td,
+.markdown-preview-view table tr:hover th,
+.markdown-preview-view table tr:hover td {
+  background-color: rgba(59, 130, 246, 0.12) !important;
+  transition: all 120ms ease !important;
+}
+
+/* Célula tem prioridade sobre a linha */
+.cm-editor .cm-content table tr:hover th:hover,
+.cm-editor .cm-content table tr:hover td:hover,
+.markdown-preview-view table tr:hover th:hover,
+.markdown-preview-view table tr:hover td:hover {
+  background-color: rgba(59, 130, 246, 0.35) !important;
+}

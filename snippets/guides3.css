@@ -1,0 +1,25 @@
+/* ===== TABLE ZEBRA ===== */
+.table-editor tbody tr:nth-child(odd) td,
+.table-editor tbody tr:nth-child(odd) th {
+    background-color: rgba(128, 128, 128, 0.045) !important;
+}
+
+.theme-dark .table-editor tbody tr:nth-child(odd) td,
+.theme-dark .table-editor tbody tr:nth-child(odd) th {
+    background-color: rgba(255, 255, 255, 0.045) !important;
+}
+
+/* ===== TABLE ZEBRA ===== */
+.table-editor tbody tr:nth-child(odd) td,
+.table-editor tbody tr:nth-child(odd) th,
+.markdown-reading-view table tbody tr:nth-child(odd) td,
+.markdown-reading-view table tbody tr:nth-child(odd) th {
+    background-color: rgba(128, 128, 128, 0.045) !important;
+}
+
+.theme-dark .table-editor tbody tr:nth-child(odd) td,
+.theme-dark .table-editor tbody tr:nth-child(odd) th,
+.theme-dark .markdown-reading-view table tbody tr:nth-child(odd) td,
+.theme-dark .markdown-reading-view table tbody tr:nth-child(odd) th {
+    background-color: rgba(255, 255, 255, 0.045) !important;
+}
