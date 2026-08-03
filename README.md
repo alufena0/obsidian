@@ -7,6 +7,7 @@ All of them solve something that was missing or broke after an update.
 
 | Plugin                                                         | Description                                                                                         |
 | -------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| [app-menu-ribbon](./app-menu-ribbon)                           | Puts the native app menu behind a ribbon click. Essential when the title bar is hidden              |
 | [click-to-edit-image](./click-to-edit-image)                   | Brings the embed syntax into focus when you click an image. No more hunting for it in source        |
 | [copy-image-context-menu](./copy-image-context-menu)           | One right-click to copy any embedded image straight to the clipboard                               |
 | [delete-image-context-menu](./delete-image-context-menu)       | Deletes an image and scrubs every embed reference from the vault in a single right-click            |
@@ -19,12 +20,12 @@ All of them solve something that was missing or broke after an update.
 | [middle-click-scroll](./middle-click-scroll)                   | Middle-click to lock into auto-scroll, like VS Code's scrollOnMiddleClick                           |
 | [min-font-zoom](./min-font-zoom)                               | One Ctrl + scroll down jumps the font straight to minimum                                           |
 | [sorted-import](./sorted-import)                               | Imports images and videos as embeds in your chosen sort order. Handles filename collisions the same way Obsidian does natively                         |
-| [sticky-edit-button](./sticky-edit-button)                     | Tracks the edit-block-button as you scroll through tall images. It stays in the corner instead of disappearing off screen |
+| [sticky-edit-button](./sticky-edit-button) DECRAPETED     | Tracks the edit-block-button as you scroll through tall images. It stays in the corner instead of disappearing off screen |
 | [tab-path-tooltip](./tab-path-tooltip)                         | Hover a tab to see its full vault-relative path. Useful when filenames alone aren't enough          |
 | [underline](./underline)                                       | Adds ++underline++ syntax to Live Preview and Reading Mode. The missing markup                      |
-| [show-external-urls](./show-external-urls) | Expands every external link to show its full URL inline, across all editor modes |
-| [crop-image-edges](./crop-image-edges) | Trims the dead space around images without leaving the vault |
-## Installation
+| [show-external-urls](./show-external-urls)                     | Expands every external link to show its full URL inline, across all editor modes                    |
+| [crop-image-edges](./crop-image-edges)                         | Trims the dead space around images without leaving the vault                                        |
 
+## Installation
 Each plugin folder contains `main.js` and `manifest.json`.
 Copy the folder to `.obsidian/plugins/` and enable it in Settings → Community Plugins.
