@@ -1,7 +1,6 @@
 # Obsidian Plugins
 
-Plugins I built for my own Obsidian vault. Vibe coded with AI assistance.
-All of them solve something that was missing or broke after an update.
+Plugins I built for my own Obsidian vault. All of them solve something that was missing or broke after an update.
 
 ## Plugins
 
