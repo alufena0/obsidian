@@ -5,6 +5,6 @@
   "minAppVersion": "0.15.0",
   "description": "Right-click any rendered image to crop it — remove empty borders, auto-trim whitespace, or drag a selection manually.",
   "author": "alufena",
-  "authorUrl": "https://gitlab.com/alufena/obsidian-plugins",
+  "authorUrl": "https://github.com/alufena0/obsidian",
   "isDesktopOnly": true
 }

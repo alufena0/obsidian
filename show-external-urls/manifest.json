@@ -4,7 +4,7 @@
     "version": "1.0.0",
     "minAppVersion": "1.0.0",
     "description": "Shows the full URL after every external markdown link, in all editor modes.",
-    "author": "alufena (vibe coded)",
-    "authorUrl": "https://gitlab.com/alufena/obsidian-plugins",
+    "author": "alufena",
+    "authorUrl": "https://github.com/alufena0/obsidian",
     "isDesktopOnly": false
 }

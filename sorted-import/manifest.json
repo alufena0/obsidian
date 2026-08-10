@@ -4,7 +4,7 @@
   "version": "1.1.0",
   "minAppVersion": "1.0.0",
   "description": "Pick any images or videos and they land in the note in your chosen sort order. Handles filename collisions natively.",
-  "author": "alufena (vibe coded)",
-  "authorUrl": "https://gitlab.com/alufena",
+  "author": "alufena",
+  "authorUrl": "https://github.com/alufena0/obsidian",
   "isDesktopOnly": true
 }
