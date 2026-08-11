@@ -32,3 +32,20 @@
 .markdown-preview-view .el-blockquote blockquote p:has(> span.internal-embed.image-embed) {
     text-align: center !important;
 }
+
+.cm-line.HyperMD-quote:has(> .internal-embed.image-embed) {
+    text-indent: 0 !important;
+    padding-inline-start: 0 !important;
+}
+
+.callout-content p:has(> span.internal-embed.image-embed) {
+    text-align: center !important;
+}
+.callout-content span.internal-embed.image-embed {
+    display: inline-block !important;
+}
+.callout-content span.internal-embed.image-embed img {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
