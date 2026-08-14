@@ -24,6 +24,7 @@ Plugins I built for my own Obsidian vault. All of them solve something that was 
 | [underline](./underline)                                       | Adds ++underline++ syntax to Live Preview and Reading Mode. The missing markup                      |
 | [show-external-urls](./show-external-urls)                     | Expands every external link to show its full URL inline, across all editor modes                    |
 | [crop-image-edges](./crop-image-edges)                         | Trims the dead space around images without leaving the vault                                        |
+| [copy-as-png](./copy-as-png-install) | Captures the rendered note as a PNG and copies it to the clipboard. Handles Mermaid diagrams. |
 
 ## Installation
 Each plugin folder contains `main.js` and `manifest.json`.
