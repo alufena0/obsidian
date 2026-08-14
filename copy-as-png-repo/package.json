@@ -1,7 +1,7 @@
 {
   "name": "copy-as-png",
   "version": "1.0.0",
-  "description": "Copy the current Obsidian note as a PNG image to clipboard, rendering Mermaid diagrams, syntax-highlighted code blocks, and embedded images.",
+  "description": "Copy the current Obsidian note as a PNG image to clipboard, rendering Mermaid diagrams.",
   "private": true,
   "scripts": {
     "build": "node esbuild.config.mjs"
