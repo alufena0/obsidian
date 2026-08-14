@@ -1,7 +1,6 @@
 # Copy as PNG
 
-Obsidian plugin: copies the active note's Reading View — Mermaid diagrams,
-syntax-highlighted code blocks, embedded images, everything — to the
+Obsidian plugin: copies the active note's Reading View — Mermaid diagrams — to the
 clipboard as a PNG.
 
 ## How it works
