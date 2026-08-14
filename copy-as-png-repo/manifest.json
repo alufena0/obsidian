@@ -3,7 +3,7 @@
   "name": "Copy as PNG",
   "version": "1.0.0",
   "minAppVersion": "1.0.0",
-  "description": "Copy the current note as a PNG image to clipboard, rendering Mermaid diagrams, syntax-highlighted code blocks, and embedded images.",
+  "description": "Copy the current note as a PNG image to clipboard, rendering Mermaid diagrams.",
   "author": "alufena",
   "authorUrl": "https://gitlab.com/alufena",
   "isDesktopOnly": true
