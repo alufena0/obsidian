@@ -38,14 +38,9 @@
     padding-inline-start: 0 !important;
 }
 
-.callout-content p:has(> span.internal-embed.image-embed) {
-    text-align: center !important;
-}
-.callout-content span.internal-embed.image-embed {
-    display: inline-block !important;
-}
-.callout-content span.internal-embed.image-embed img {
+.callout-content p > span.internal-embed.image-embed {
     display: block !important;
+    width: fit-content !important;
     margin-left: auto !important;
     margin-right: auto !important;
 }
